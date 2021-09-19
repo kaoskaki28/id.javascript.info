@@ -27,7 +27,7 @@ Kasus penggunaan umum untuk `??` adalah memberikan nilai default untuk variabel 
 Misalnya, di sini kami menampilkan `pengguna` jika didefinisikan, jika tidak `Anonim`:
 
 ```js dijalankan
-biarkan pengguna;
+let pengguna;
 
 alert(pengguna ?? "Anonim"); // Anonim (pengguna tidak ditentukan)
 ```
@@ -35,7 +35,7 @@ alert(pengguna ?? "Anonim"); // Anonim (pengguna tidak ditentukan)
 Berikut ini contoh dengan `pengguna` ditetapkan ke sebuah nama:
 
 ```js dijalankan
-biarkan pengguna = "John";
+let pengguna = "John";
 
 alert(pengguna ?? "Anonim"); // John (ditentukan pengguna)
 ```
@@ -49,9 +49,9 @@ Kami ingin menampilkan nama pengguna menggunakan salah satu variabel ini, atau m
 Mari kita gunakan operator `??` untuk itu:
 
 ```js dijalankan
-biarkan namadepan = null;
-biarkan namabelakang = null;
-biarkan nickName = "Supercoder";
+let namadepan = null;
+let namabelakang = null;
+let nickName = "Supercoder";
 
 // menunjukkan nilai yang ditentukan pertama:
 *!*
@@ -66,9 +66,9 @@ Operator OR `||` dapat digunakan dengan cara yang sama seperti `??`, seperti yan
 Misalnya, pada kode di atas kita dapat mengganti `??` dengan `||` dan tetap mendapatkan hasil yang sama:
 
 ```js dijalankan
-biarkan namadepan = null;
-biarkan namabelakang = null;
-biarkan nickName = "Supercoder";
+let namadepan = null;
+let namabelakang = null;
+let nickName = "Supercoder";
 
 // menunjukkan nilai kebenaran pertama:
 *!*
